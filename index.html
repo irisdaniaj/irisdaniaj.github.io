@@ -44,9 +44,16 @@
         </div>
         <div class="mt-6 text-xs text-neutral-400">Munich, Germany · Open to collaborations</div>
       </div>
-      <div class="relative">
-        <img src="/assets/me.jpg" alt="Iris Dania Jimenez" class="w-48 h-48 rounded-full border-4 border-white/20 shadow-xl object-cover object-top mx-auto" />
-      </div>
+      <div class="relative flex justify-center">
+      <img
+        src="assets/me.jpg?v=2"          <!-- cache bust -->
+        alt="Iris Dania Jimenez"
+        class="w-48 h-48 md:w-56 md:h-56  /* explicit size */
+               rounded-full ring-2 ring-white/20 shadow-xl
+               object-cover object-top"
+        loading="lazy"
+      />
+     </div>
     </section>
   </main>
 
